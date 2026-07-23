@@ -1,10 +1,12 @@
 import google.generativeai as genai
 import numpy as np
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
+genai.configure(api_key=api_key)
 
 def get_embedding(text):
     result = genai.embed_content(
