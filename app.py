@@ -3,7 +3,7 @@ from read_resume import read_pdf
 from extract_info import extract_candidate_info
 from similarity import get_embedding, cosine_similarity
 
-st.title("Resume Screening Agent")
+st.title("RAG Resume Matching Agent")
 st.write("Upload a resume and paste a job description to see how well they match.")
 
 job_description = st.text_area("Paste job description")
