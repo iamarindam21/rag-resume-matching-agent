@@ -18,17 +18,14 @@ Google's Gemini API — demonstrating the core RAG pipeline end to end.
    description to see results interactively
 
 ## Tech Stack
-
-| Layer | Tool |
-|---|---|
-| Language | Python 3.12 |
-| LLM / embeddings | Google Gemini API (`google-generativeai`) |
-| PDF parsing | PyPDF2 |
-| Similarity math | NumPy (cosine similarity) |
-| UI | Streamlit |
-| Hosting (code) | GitHub |
-| Hosting (live app) | Streamlit Community Cloud (free tier) |
-| Secrets management | `.env` locally, Streamlit Cloud "Secrets" in production |
+- **Language:** Python 3.12
+- **LLM / embeddings:** Google Gemini API (`google-generativeai`)
+- **PDF parsing:** PyPDF2
+- **Similarity math:** NumPy (cosine similarity)
+- **UI:** Streamlit
+- **Hosting (code):** GitHub
+- **Hosting (live app):** Streamlit Community Cloud (free tier)
+- **Secrets management:** `.env` locally, Streamlit Cloud "Secrets" in production
 
 ## Running it
 \`\`\`bash
